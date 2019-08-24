@@ -6,14 +6,13 @@
        :model="loginForm"
        :rules="rules"
        ref="loginForm"
-        label-width="100px"
         class="demo-ruleForm">
-
+  <!-- 绑定规则 -->
   <el-form-item  prop="username">
-    <el-input v-model="loginForm.username" placeholder="请输入用户名"></el-input>
+    <el-input prefix-icon="iconfont icon-denglu4" v-model="loginForm.username" placeholder="请输入用户名"></el-input>
   </el-form-item>
    <el-form-item  prop="password">
-    <el-input v-model="loginForm.password" placeholder="请输入密码"></el-input>
+    <el-input prefix-icon="iconfont icon-mima2" v-model="loginForm.password" placeholder="请输入密码"></el-input>
   </el-form-item>
    <el-form-item>
     <el-button type="primary" @click="login" >登录</el-button>
